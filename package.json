@@ -1,0 +1,42 @@
+{
+  "name": "voicebot-watson",
+  "version": "1.0.0",
+  "description": "Chat with voice using speech to text, text to speech and watson assistant",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Najibsaurus/VoiceBot-Watson.git"
+  },
+  "keywords": [
+    "ibm",
+    "watson",
+    "dicoding",
+    "bot",
+    "speech",
+    "text",
+    "voice",
+    "conversation",
+    "chat"
+  ],
+  "author": "Najib Abdillah",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Najibsaurus/VoiceBot-Watson/issues"
+  },
+  "homepage": "https://github.com/Najibsaurus/VoiceBot-Watson#readme",
+  "dependencies": {
+    "blob-stream": "^0.1.3",
+    "colors": "^1.4.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "ibm-watson": "^5.2.1",
+    "morgan": "^1.9.1",
+    "socket.io": "^2.3.0",
+    "socket.io-stream": "^0.9.1",
+    "wav": "^1.0.2"
+  }
+}

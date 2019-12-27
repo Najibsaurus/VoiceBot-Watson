@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="robots" content="noindex">
+    <title>Bootstrap Chat Box - Bootsnipp.com</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" sizes="32x32">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.3/socket.io.min.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io-stream/0.9.1/socket.io-stream.min.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.min.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/locale/id.js" charset="utf-8"></script>
+    <script src="js/recorder.js" charset="utf-8"></script>
+    <script src="js/chat.js" charset="utf-8"></script>
+    <script src="js/audio.js" charset="utf-8"></script>
+   </head>
+  <body>
+    <div class="row">
+      <div class="col col-lg-offset-4 col-lg-4 col-md-offset-4 col-md-6 col-sm-12">
+        <div class="chat-area">
+          <ul class="list-unstyled"></ul>
+        </div>
+        <div class="message_write">
+          <textarea id="message" class="form-control" placeholder="type a message" onkeyup="enterMsg(event)"></textarea>
+          <div class="clearfix"></div>
+          <div class="chat_bottom">
+            <input type="checkbox" id="quickMsg" checked="checked"> Enter to Send Message
+            <div class="pull-right">
+              <button id="mic_btn" class="btn btn-success fa fa-lg fa-microphone" onclick="toggleRecording(this);"></button>
+              <button id="send_btn" class="btn btn-success fa fa-lg fa-paper-plane" onclick="sendMessage()"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
